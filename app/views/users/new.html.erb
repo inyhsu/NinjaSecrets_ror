@@ -1,0 +1,16 @@
+<form action="/users" method="post">
+    <div class="form-group">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        Name:
+        <input type="text" name="user[name]">
+        Email:
+        <input type="text" name="user[email]">
+        Password:
+        <input type="text" name="user[password]">
+        Password confirmation:
+        <input type="text" name="user[password_confirmation]">
+       <input type='submit' value='Create' class="btn btn-primary">
+    <div>
+</form>
+<br>
+<a href="/sessions/new">If you already have account, please log in</a>
